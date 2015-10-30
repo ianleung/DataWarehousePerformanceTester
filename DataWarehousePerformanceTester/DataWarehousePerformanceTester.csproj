@@ -88,10 +88,29 @@
     <Reference Include="GuaranteedRate.Net.Http.HttpService">
       <HintPath>..\packages\GuaranteedRate.Net.Http.HttpService.1.0.3.0\lib\net45\GuaranteedRate.Net.Http.HttpService.dll</HintPath>
     </Reference>
+    <Reference Include="Nito.AsyncEx.UnitTests.MSTest">
+      <HintPath>..\packages\AsyncUnitTests-MSTest.1.0.1\lib\net40-client\Nito.AsyncEx.UnitTests.MSTest.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Test.cs" />
     <Compile Include="DataServices\Routes.cs" />
+    <Compile Include="API Operations\APIOperation.cs" />
+    <Compile Include="API Operations\Authenticate.cs" />
+    <Compile Include="API Operations\DeviceBackup.cs" />
+    <Compile Include="API Operations\DeviceScan.cs" />
+    <Compile Include="API Operations\DeviceSetting.cs" />
+    <Compile Include="API Operations\DeviceStatus.cs" />
+    <Compile Include="API Operations\GenericRequest.cs" />
+    <Compile Include="API Operations\ICmd.cs" />
+    <Compile Include="API Operations\Interceptor.cs" />
+    <Compile Include="API Operations\Location.cs" />
+    <Compile Include="API Operations\Organization.cs" />
+    <Compile Include="HTTP\HTTPHandler.cs" />
+    <Compile Include="HTTP\HTTPOperation.cs" />
+    <Compile Include="HTTP\HTTPQuery.cs" />
+    <Compile Include="HTTP\QueryParameter.cs" />
+    <Compile Include="TestGlobals.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
